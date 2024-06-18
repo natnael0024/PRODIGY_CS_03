@@ -27,7 +27,7 @@ def check_password():
         return print("\033[91m# weak, password must contain atleast one uppercase letter #\033[0m")
     lowercase = contains_lowercase(password)
     if not lowercase:
-        return print("\033[91m# medium, password must contain atleast one lowercase letter #\033[0m")
+        return print("\033[91m# weak, password must contain atleast one lowercase letter #\033[0m")
     if not check_sp_char(password):
         return print("\033[91m# medium, pasword must contain atleast one special character #\033[0m")
 
